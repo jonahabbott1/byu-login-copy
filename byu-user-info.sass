@@ -1,0 +1,120 @@
+/*!
+ /    Copyright 2019 Brigham Young University
+ /
+ /    Licensed under the Apache License, Version 2.0 (the "License");
+ /    you may not use this file except in compliance with the License.
+ /    You may obtain a copy of the License at
+ /
+ /        http://www.apache.org/licenses/LICENSE-2.0
+ /
+ /    Unless required by applicable law or agreed to in writing, software
+ /    distributed under the License is distributed on an "AS IS" BASIS,
+ /    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ /    See the License for the specific language governing permissions and
+ /    limitations under the License.
+ / */
+/*!
+ /    Copyright 2019 Brigham Young University
+ /
+ /    Licensed under the Apache License, Version 2.0 (the "License");
+ /    you may not use this file except in compliance with the License.
+ /    You may obtain a copy of the License at
+ /
+ /        http://www.apache.org/licenses/LICENSE-2.0
+ /
+ /    Unless required by applicable law or agreed to in writing, software
+ /    distributed under the License is distributed on an "AS IS" BASIS,
+ /    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ /    See the License for the specific language governing permissions and
+ /    limitations under the License.
+ / */
+@import https://cdn.byu.edu/theme-fonts/1.x.x/ringside/fonts.css;
+@import https://cdn.byu.edu/theme-fonts/1.x.x/public-sans/fonts.css;
+/*
+ * Corner Radius
+ */
+/*
+ * Colors
+ */
+/*
+ * Fonts
+ */
+/*
+ * Spacing
+ */
+/*
+ * Breakpoints
+ */
+/*
+ * Foundations
+ */
+/*!
+ /    Copyright 2019 Brigham Young University
+ /
+ /    Licensed under the Apache License, Version 2.0 (the "License");
+ /    you may not use this file except in compliance with the License.
+ /    You may obtain a copy of the License at
+ /
+ /        http://www.apache.org/licenses/LICENSE-2.0
+ /
+ /    Unless required by applicable law or agreed to in writing, software
+ /    distributed under the License is distributed on an "AS IS" BASIS,
+ /    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ /    See the License for the specific language governing permissions and
+ /    limitations under the License.
+ / */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.hidden {
+  display: none !important; }
+
+:host .byu-id {
+  background-color: #fff;
+  padding: 0.65em;
+  color: #002e5d !important;
+  text-align: right;
+  height: 100%;
+  box-sizing: border-box;
+  grid-row: 2 / 3; }
+  @media (min-width: 28rem) {
+    :host .byu-id {
+      padding: 0.65em 1.1em; } }
+  :host .byu-id a, :host .byu-id a:link, :host .byu-id a:visited, :host .byu-id ::slotted(*) {
+    color: #002e5d !important;
+    display: inline-block;
+    padding: 0.25em 0;
+    text-decoration: none; }
+  :host .byu-id svg {
+    width: 1.25em;
+    height: 1.25em;
+    display: inline-block;
+    position: relative;
+    top: 0.25em;
+    margin: 0 0.25em; }
+  @supports (display: grid) {
+    @media (min-width: 21rem) {
+      :host .byu-id {
+        white-space: nowrap; } }
+    @media (min-width: 50rem) {
+      :host .byu-id {
+        background: transparent;
+        order: 2;
+        color: #fff !important;
+        padding: 0 0.5em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; }
+        :host .byu-id svg {
+          top: 0;
+          margin: 0 0.5em; }
+        :host .byu-id a, :host .byu-id a:link, :host .byu-id a:visited, :host .byu-id ::slotted(*) {
+          color: #fff !important;
+          white-space: nowrap; } }
+    @media (min-width: 60rem) {
+      :host .byu-id {
+        padding: 0 1em; } } }

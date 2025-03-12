@@ -1,0 +1,191 @@
+/*!
+ /    Copyright 2019 Brigham Young University
+ /
+ /    Licensed under the Apache License, Version 2.0 (the "License");
+ /    you may not use this file except in compliance with the License.
+ /    You may obtain a copy of the License at
+ /
+ /        http://www.apache.org/licenses/LICENSE-2.0
+ /
+ /    Unless required by applicable law or agreed to in writing, software
+ /    distributed under the License is distributed on an "AS IS" BASIS,
+ /    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ /    See the License for the specific language governing permissions and
+ /    limitations under the License.
+ / */
+/*!
+ /    Copyright 2019 Brigham Young University
+ /
+ /    Licensed under the Apache License, Version 2.0 (the "License");
+ /    you may not use this file except in compliance with the License.
+ /    You may obtain a copy of the License at
+ /
+ /        http://www.apache.org/licenses/LICENSE-2.0
+ /
+ /    Unless required by applicable law or agreed to in writing, software
+ /    distributed under the License is distributed on an "AS IS" BASIS,
+ /    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ /    See the License for the specific language governing permissions and
+ /    limitations under the License.
+ / */
+@import https://cdn.byu.edu/theme-fonts/1.x.x/ringside/fonts.css;
+@import https://cdn.byu.edu/theme-fonts/1.x.x/public-sans/fonts.css;
+.visually-hidden, :host .byu-search-el .byu-search-label {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+:host .byu-search-el .byu-search-btn {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  text-decoration: none;
+  background: #fff;
+  color: #fff;
+  font-size: inherit;
+  cursor: pointer;
+  text-align: center;
+  transition: background 200ms ease, color 200ms ease, border 200ms ease, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+  :host .byu-search-el .byu-search-btn:active {
+    transform: scale(0.99); }
+
+.hidden {
+  display: none !important; }
+
+/*!
+ /    Copyright 2019 Brigham Young University
+ /
+ /    Licensed under the Apache License, Version 2.0 (the "License");
+ /    you may not use this file except in compliance with the License.
+ /    You may obtain a copy of the License at
+ /
+ /        http://www.apache.org/licenses/LICENSE-2.0
+ /
+ /    Unless required by applicable law or agreed to in writing, software
+ /    distributed under the License is distributed on an "AS IS" BASIS,
+ /    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ /    See the License for the specific language governing permissions and
+ /    limitations under the License.
+ / */
+/*
+ * Corner Radius
+ */
+/*
+ * Colors
+ */
+/*
+ * Fonts
+ */
+/*
+ * Spacing
+ */
+/*
+ * Breakpoints
+ */
+/*
+ * Foundations
+ */
+@supports (display: grid) {
+  @media (min-width: 21rem) {
+    :host .byu-search-el {
+      grid-column: 1 / 3; } }
+  @media (min-width: 50rem) {
+    :host .byu-search-el {
+      min-width: 144px;
+      order: 3;
+      margin: 0 1em 0 0.5em; } }
+  @media (min-width: 75rem) {
+    :host .byu-search-el {
+      margin: 0 1em;
+      min-width: 144px; } } }
+
+:host .byu-search-el #byu-site-search {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  line-height: 25.6px;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: "HCo Ringside Narrow SSm", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-radius: 0;
+  margin-bottom: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+  @media (min-width: 50rem) {
+    :host .byu-search-el #byu-site-search {
+      width: 144px;
+      height: 35px;
+      padding: 0.75em 0.65em;
+      border: 1px solid #fff; } }
+  :host .byu-search-el #byu-site-search::placeholder {
+    font-family: "HCo Ringside Narrow SSm", "Open Sans", Helvetica, Arial, sans-serif;
+    opacity: 1;
+    color: #8f8f8f !important; }
+  @supports (display: grid) {
+    @media (min-width: 50rem) {
+      :host .byu-search-el #byu-site-search {
+        padding: 0.4em 1em;
+        border-radius: 0.9625em; } } }
+
+:host .byu-search-el .byu-search-btn {
+  color: #002e5d;
+  display: block;
+  position: absolute;
+  top: 0.5em;
+  right: 2px;
+  height: 35px;
+  width: 35px;
+  background: transparent;
+  border: 1px solid transparent;
+  font-size: 1rem; }
+  @media (min-width: 50rem) {
+    :host .byu-search-el .byu-search-btn {
+      right: 16px; } }
+  :host .byu-search-el .byu-search-btn svg {
+    width: 100%;
+    height: 100%; }
+  :host .byu-search-el .byu-search-btn:focus {
+    background: #e6e6e6;
+    color: #002e5d; }
+  :host .byu-search-el .byu-search-btn:focus {
+    border: 1px solid #ccc; }
+  @supports (display: grid) {
+    @media (min-width: 50rem) {
+      :host .byu-search-el .byu-search-btn {
+        top: 0; } } }
+
+:host .byu-search-el #search::slotted(input) {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  line-height: 25.6px;
+  border: 1px solid #fff;
+  border-bottom: 1px solid #ddd;
+  font-family: "HCo Ringside Narrow SSm", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-radius: 0;
+  margin-bottom: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+  @media (min-width: 50rem) {
+    :host .byu-search-el #search::slotted(input) {
+      width: 144px;
+      height: 35px;
+      padding: 0.75em 0.65em;
+      border: 1px solid #fff; } }
+  :host .byu-search-el #search::slotted(input)::placeholder {
+    font-family: "HCo Ringside Narrow SSm", "Open Sans", Helvetica, Arial, sans-serif;
+    opacity: 1;
+    color: #8f8f8f !important; }
+  @supports (display: grid) {
+    @media (min-width: 50rem) {
+      :host .byu-search-el #search::slotted(input) {
+        padding: 0.4em 1em;
+        border-radius: 0.9625em; } } }

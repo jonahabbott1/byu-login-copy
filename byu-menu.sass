@@ -1,0 +1,117 @@
+/*!
+ * /    Copyright 2019 Brigham Young University
+ * /
+ * /    Licensed under the Apache License, Version 2.0 (the "License");
+ * /    you may not use this file except in compliance with the License.
+ * /    You may obtain a copy of the License at
+ * /
+ * /        http://www.apache.org/licenses/LICENSE-2.0
+ * /
+ * /    Unless required by applicable law or agreed to in writing, software
+ * /    distributed under the License is distributed on an "AS IS" BASIS,
+ * /    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * /    See the License for the specific language governing permissions and
+ * /    limitations under the License.
+ * / */
+/*!
+ /    Copyright 2019 Brigham Young University
+ /
+ /    Licensed under the Apache License, Version 2.0 (the "License");
+ /    you may not use this file except in compliance with the License.
+ /    You may obtain a copy of the License at
+ /
+ /        http://www.apache.org/licenses/LICENSE-2.0
+ /
+ /    Unless required by applicable law or agreed to in writing, software
+ /    distributed under the License is distributed on an "AS IS" BASIS,
+ /    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ /    See the License for the specific language governing permissions and
+ /    limitations under the License.
+ / */
+@import https://cdn.byu.edu/theme-fonts/1.x.x/ringside/fonts.css;
+@import https://cdn.byu.edu/theme-fonts/1.x.x/public-sans/fonts.css;
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.hidden {
+  display: none !important; }
+
+/*!
+ /    Copyright 2019 Brigham Young University
+ /
+ /    Licensed under the Apache License, Version 2.0 (the "License");
+ /    you may not use this file except in compliance with the License.
+ /    You may obtain a copy of the License at
+ /
+ /        http://www.apache.org/licenses/LICENSE-2.0
+ /
+ /    Unless required by applicable law or agreed to in writing, software
+ /    distributed under the License is distributed on an "AS IS" BASIS,
+ /    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ /    See the License for the specific language governing permissions and
+ /    limitations under the License.
+ / */
+/*
+ * Corner Radius
+ */
+/*
+ * Colors
+ */
+/*
+ * Fonts
+ */
+/*
+ * Spacing
+ */
+/*
+ * Breakpoints
+ */
+/*
+ * Foundations
+ */
+:host .byu-menu-el {
+  margin: 0;
+  padding: 0;
+  font-size: 0.88889em !important;
+  letter-spacing: 0;
+  background: #fff; }
+  :host .byu-menu-el ::slotted(a), :host .byu-menu-el ::slotted(a:link), :host .byu-menu-el ::slotted(a:visited) {
+    color: #002e5d !important;
+    display: block;
+    padding: 11px 22px !important;
+    border-bottom: solid 3px rgba(0, 0, 0, 0);
+    line-height: 1.6;
+    font-size: 1rem !important;
+    transition: background 250ms ease;
+    text-decoration: none !important; }
+    @media (min-width: 50rem) {
+      :host .byu-menu-el ::slotted(a), :host .byu-menu-el ::slotted(a:link), :host .byu-menu-el ::slotted(a:visited) {
+        display: inline-block; }
+        :host .byu-menu-el ::slotted(a) a, :host .byu-menu-el ::slotted(a) a:link, :host .byu-menu-el ::slotted(a) a:visited, :host .byu-menu-el ::slotted(a:link) a, :host .byu-menu-el ::slotted(a:link) a:link, :host .byu-menu-el ::slotted(a:link) a:visited, :host .byu-menu-el ::slotted(a:visited) a, :host .byu-menu-el ::slotted(a:visited) a:link, :host .byu-menu-el ::slotted(a:visited) a:visited {
+          padding: 0.5em 1.35em !important;
+          white-space: nowrap; } }
+  :host .byu-menu-el ::slotted(a.active) {
+    border-left: solid 3px #002e5d;
+    border-bottom: none; }
+    @media (min-width: 50rem) {
+      :host .byu-menu-el ::slotted(a.active) {
+        border-left: none;
+        border-bottom: 3px solid #002e5d !important; } }
+  :host .byu-menu-el ::slotted(*:hover), :host .byu-menu-el ::slotted(*:focus) {
+    background-color: #fafafa; }
+    @media (min-width: 50rem) {
+      :host .byu-menu-el ::slotted(*:hover), :host .byu-menu-el ::slotted(*:focus) {
+        border-left: none;
+        border-bottom: 3px solid #002e5d !important; } }
+  @media (min-width: 50rem) {
+    :host .byu-menu-el {
+      padding-left: 5.5em;
+      border-top: 1px solid #f4f4f4; } }
+
+:host .constrain .byu-menu-items-wrapper {
+  max-width: 1080px;
+  margin: 0 auto; }
