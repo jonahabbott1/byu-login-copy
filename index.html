@@ -570,7 +570,8 @@
                     <div>
                       <!--<div class="card-header text-center">--><!--<h2 th:text="#{cas.login.pagetitle}">Login</h2>--><!--<span class="fa-stack fa-2x hidden-xs">--><!--<i class="fa fa-circle fa-stack-2x"></i>--><!--<i class="fa fa-lock fa-stack-1x fa-inverse"></i>--><!--</span>--><!--</div>-->
                       <div>
-                        <form method="post" id="fm1" action="login">
+                        <!-- <form method="post" id="fm1" action="login"> -->
+                        <div>
                           <!--<h3>Testing</h3>--><!--<h3 th:utext="#{screen.welcome.instructions}">Enter your Username and Password</h3>-->
                           <section>
                             <!--<label for="username" th:utext="#{screen.welcome.label.netid}">Username</label>-->
@@ -639,7 +640,7 @@
                             tabindex="3"
                             onclick="console.log('User logged in.');"
                           />
-                        </form>
+                        </div>
 
                         <!--<form th:if="${passwordManagementEnabled}" method="post" id="passwordManagementForm">--><!--<input type="hidden" name="execution" th:value="${flowExecutionKey}"/>--><!--<input type="hidden" name="_eventId" value="resetPassword"/>--><!--<span></span>--><!--<a th:utext="#{screen.pm.button.resetPassword}" href="javascript:void(0)"--><!--onclick="$('#passwordManagementForm').submit();"/>--><!--<p/>--><!--</form>--><!--<div th:unless="${passwordManagementEnabled}">--><!--&lt;!&ndash;<span class="fa fa-question-circle"></span>&ndash;&gt;--><!--<span th:utext="#{screen.pm.button.forgotpwd}">Forgot your password?</span>--><!--<p/>--><!--</div>--><!--                    /*<![CDATA[*/--><!--                    var i = /*One moment please...*/--><!--                    var j = /*Sign In*/--><!--                    /*]]>*/-->
                         <script type="text/javascript">
