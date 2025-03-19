@@ -1,0 +1,26 @@
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
+.hidden {
+  display: none !important; }
+
+:host .byu-breadcrumbs-el ::slotted(*) {
+  opacity: 0.75;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 0.5em;
+  padding-right: 0.75em;
+  border-right: solid 1px rgba(255, 255, 255, 0.25); }
+
+:host .byu-breadcrumbs-el ::slotted(*:hover), :host .byu-breadcrumbs-el ::slotted(*:focus) {
+  opacity: 1; }
+
+:host .byu-breadcrumbs-el ::slotted(*:last-child) {
+  border: none; }
+
+:host .byu-breadcrumbs-el.style-scope {
+  font-size: 0.77778em; }
