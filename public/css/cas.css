@@ -1,0 +1,580 @@
+/*!
+ * Bootstrap v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+.page-content {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.linkNoStyle {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+}
+
+.containing-element {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.page-content {
+  flex-grow: 1;
+}
+
+body {
+  color: white;
+  margin: 0px;
+  font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+}
+
+a {
+  color: #5199e1;
+
+  /*text-decoration: underline;*/
+
+  & :hover {
+    color: #0062b8;
+  }
+
+  & :active,
+  & :visited {
+    color: #5199e1;
+    /*text-decoration: underline;*/
+  }
+}
+
+.signin-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+a.byu-forgot-link {
+  color: #b79257;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+/*a.byu-forgot-link:first-of-type {*/
+/*    border-right: 1px solid white;*/
+/*    padding-right: 10px;*/
+/*    margin-right: 7px;*/
+/*}*/
+
+img.byu-bkgd-img {
+  object-fit: cover;
+  position: fixed;
+  z-index: -1000;
+  min-height: 100%;
+  width: 100%;
+  filter: blur(2px) brightness(120%) contrast(80%);
+  object-position: 0% 0%;
+}
+
+.byu-signin-box {
+  background-color: #002e5d;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.byu-signin-box p {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}
+
+.byu-signin-box > p:first-child {
+  margin-bottom: 10px;
+}
+
+.signin-divider {
+  display: flex;
+  align-items: center;
+  padding: 22px 0 36px;
+}
+
+.divider-line {
+  background-color: white;
+  height: 1px;
+  width: 100%;
+}
+
+.signin-divider span {
+  padding: 0 12px;
+}
+
+.post-signin-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-signin-options p {
+  margin: 4px 0;
+}
+
+.post-signin-options p:first-child {
+  margin: 16px 0;
+}
+
+#list-providers2 li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  list-style: none;
+  display: block;
+  width: 320px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  /* padding: 4.5px 0px; */
+  cursor: pointer;
+  height: 50px;
+}
+
+#list-providers2 li img {
+  padding: 0px 12px 0px 12px;
+  /* height: 44px; */
+  /* width: 18px; */
+  /*height: 35px;*/
+  /*width: 35px;*/
+  height: 50px;
+  width: 50px;
+}
+
+#schoolAccordion h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  width: 320px;
+  border-radius: 4px;
+  /*    padding: 11px 0px;*/
+  background-color: white;
+  color: #00235d;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0;
+  padding: 16px 0;
+}
+
+#schoolAccordion div {
+  display: inline-block;
+  width: 18px;
+}
+
+.ui-icon-triangle-1-e {
+  background-image: url(../images/triangledown.png);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 6px;
+  float: right;
+  margin: 5px 10px 0 0;
+  background-size: 14px 6px;
+  background-color: #002e5d;
+  background-blend-mode: hard-light;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.ui-icon-triangle-1-s {
+  background-image: url(../images/triangleup.png);
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 6px;
+  float: right;
+  margin: 5px 10px 0 0;
+  background-size: 14px 6px;
+  background-color: #002e5d;
+  background-blend-mode: hard-light;
+}
+
+.byu-signin-box form input {
+  border-radius: 4px;
+  height: 30px;
+  width: 288px;
+  font-size: 15px;
+  font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+  font-weight: 400;
+  padding: 0 14px;
+  margin-bottom: 16px;
+}
+
+.byu-signin-box form ::placeholder {
+  color: #aaa;
+}
+
+.byu-signin-box input[type="submit"] {
+  font-family: "HCo Ringside Narrow SSm", Arial, sans-serif;
+  font-size: 16px;
+  background-color: #0062b8;
+  cursor: pointer;
+  height: 38px;
+  color: white;
+  width: 130px;
+  border: none;
+  border-radius: 4px;
+  margin: 24px 0;
+}
+
+#list-providers2 li span {
+  display: inline-flex;
+  align-items: center;
+  /* padding: 3px 0 0 0; */
+}
+
+#list-providers2 ul {
+  display: flex;
+  flex-direction: column;
+}
+
+li[title="Church"] {
+  order: -1;
+}
+
+#schoolAccordion {
+  order: 2;
+}
+
+#schoolAccordion .ui-accordion-content {
+  background-color: white;
+  width: 100%;
+  position: relative;
+  top: -8px;
+  padding: 10px 0;
+  border-radius: 4px;
+}
+
+#schoolAccordion li {
+  max-width: 272px;
+  margin: 12px 16px;
+  padding-left: 16px;
+}
+
+#schoolAccordion li img {
+  display: none;
+}
+
+/* Invalid login */
+.byu-signin-box form div > span {
+  background-color: #e61744;
+  padding: 6px 10px;
+  line-height: 50px;
+}
+
+.byubannerlogo {
+  height: 32px;
+  background-color: #002e5d;
+  /*color: #fff;*/
+  background-image: url(../images/byu-logo.png);
+  background-repeat: no-repeat;
+  background-position: 1rem 0.5rem;
+}
+
+.container {
+  padding-top: 80px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #002e5d;
+  font-size: 14px;
+  text-align: center;
+  line-height: 30px;
+}
+
+li[title="Church"] {
+  background-color: #d2d2d2;
+  color: #444;
+}
+
+li[title="BYUH"] {
+  background-color: #9e1b34;
+  color: white;
+  margin-top: 12px;
+  padding: 15px 0px;
+}
+
+li[title="ENSIGN"] {
+  background-color: #006341;
+  color: white;
+  padding: 15px 0px;
+}
+
+li[title="OKTA"] {
+  background-color: #00297a;
+  color: white;
+  padding: 15px 0px;
+}
+
+li[title="AZURE"] {
+  background-color: #00297a;
+  color: white;
+  padding: 15px 0px;
+}
+
+li[title="BYUI"] {
+  background-color: black;
+  color: white;
+  padding: 15px 0px;
+}
+
+.leftArrow {
+  height: 0;
+  width: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-right: 50px solid #002e5d;
+  position: relative;
+  right: -9px;
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.fullheightmiddle {
+  vertical-align: middle;
+  height: calc(100% - 32px);
+  /*height: 100%;*/
+}
+
+main #content > .alert.alert-danger {
+  background-color: #ffedf1;
+  color: #a3082a;
+  padding: 10px 30px;
+  border: solid 2px #a3082a;
+  margin-top: 50px;
+}
+
+.interrupt-box {
+  background-color: #002e5d;
+  color: #fff;
+  padding: 30px 40px;
+  margin: 50px 20px;
+}
+
+.interrupt-box h1 {
+  margin-top: 0;
+}
+
+.byu-signin-box input[value="One moment please..."] {
+  width: unset;
+}
+
+.interrupt-box details {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.interrupt-box details summary {
+  background-color: #0062b8;
+  padding: 8px 15px;
+  margin: 15px;
+  border-radius: 4px;
+}
+
+.interrupt-box details summary::-webkit-details-marker {
+  float: right;
+  margin: 5px 0;
+}
+
+.interrupt-box details p {
+  margin: 10px 50px;
+}
+
+.interrupt-box details li {
+  margin: 10px 50px;
+}
+
+.interrupt-box details *:last-child {
+  margin-bottom: 30px;
+}
+
+li#byuhSignIn,
+li#byuiSignIn,
+li#ensignSignIn,
+li#oktaSignIn,
+li#azureSignIn {
+  height: 20px;
+}
+
+.sandbox-notification {
+  font-weight: bold;
+  background-color: white;
+  color: rgb(0, 46, 93);
+  padding: 5px 10px;
+  margin-left: 0.5em;
+  border-radius: 3px;
+}
+
+/***** Login Actions (Y-Alert) Interrupt CSS *****/
+
+.loginActionsH1 {
+  font: bold 24px HCo Ringside Narrow SSm;
+  margin-bottom: 17px;
+  color: #002e5d;
+}
+
+.loginActionsH2 {
+  font: bold 20px/24px Public Sans;
+  margin: 0;
+  color: #002e5d;
+}
+
+.loginActionsBody {
+  font: 18px/22px Public Sans;
+  color: #141414;
+}
+
+.loginActionsButtonRow {
+  display: flex;
+  justify-content: center;
+}
+
+.loginActionsButtonRow button {
+  margin: 0px 15px 0px 15px;
+}
+
+.loginActionsButton {
+  transition-duration: 0.05s;
+  font: bold 18px/22px Public Sans;
+  border-radius: 4px;
+  letter-spacing: 0.27px;
+  cursor: pointer;
+}
+
+.loginActionsPrimaryButton {
+  color: #ffffff;
+  border: none;
+  padding: 8px 22px 9px 22px;
+  background: #0062b8;
+}
+
+.loginActionsPrimaryButton:hover {
+  background: #002e5d;
+}
+
+.loginActionsSecondaryButton {
+  color: #646464;
+  border: 2px solid #646464;
+  padding: 6px 12px 7px 20px;
+  background: transparent;
+}
+
+.loginActionsSecondaryButton:hover {
+  color: #ffffff;
+  background: #646464;
+}
+
+/***** RESPONSIVE CSS *****/
+
+/*@media screen and (max-width: 920px) {*/
+.signin-box-byu-logo {
+  align-self: center;
+}
+
+.signin-box-byu-logo img {
+  display: block;
+  width: 240px;
+  height: auto;
+  margin: 6px 0 30px;
+}
+
+/*}*/
+
+@media screen and (max-width: 400px) {
+  .signin-wrapper {
+    margin: 0;
+  }
+
+  .page-content {
+    padding: 0;
+  }
+
+  byu-header,
+  byu-footer {
+    display: none;
+  }
+
+  .removeInMobileVersion {
+    display: none;
+  }
+
+  img.byu-bkgd-img {
+    display: none;
+  }
+
+  #list-providers2 li {
+    width: 100%;
+    font-size: 14px;
+    /* height: 28px; */
+    /* line-height: 28px; */
+    /* padding: 5px 5px 0 0; */
+  }
+
+  li#byuhSignIn,
+  li#byuiSignIn {
+    height: 15px;
+  }
+
+  #schoolAccordion h3 {
+    width: 100%;
+    height: 28px;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 8px 0px;
+  }
+
+  #schoolAccordion li {
+    max-width: 196px;
+  }
+
+  .ui-icon-triangle-1-e {
+    margin: 11px 10px 0 0;
+  }
+
+  .byu-signin-box form input {
+    height: 36px;
+    width: 88%;
+    font-size: 14px;
+  }
+
+  .divider-line {
+    min-width: 99px;
+    max-width: 137px;
+  }
+
+  .signin-divider {
+    margin: 0 auto;
+  }
+
+  .signin-divider + div {
+    margin: 0 auto;
+  }
+
+  #list-providers2 li span {
+    padding: 0;
+  }
+}
