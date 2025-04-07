@@ -8,11 +8,11 @@
   },
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "cores": "^0.8.5",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^5.1.0"
-  }
+  },
+  "description": ""
 }
