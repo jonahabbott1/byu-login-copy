@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html style="height: 100%">
   <head>
-    <link rel="stylesheet" href="/css/0.css" />
-    <link rel="stylesheet" href="/css/1.css" />
-    <link rel="stylesheet" href="/css/2.css" />
-    <link rel="stylesheet" href="/css/3.css" />
-    <link rel="stylesheet" href="/css/4.css" />
-    <link rel="stylesheet" href="/css/5.css" />
-    <link rel="stylesheet" href="/css/cas.css" />
-    <link rel="stylesheet" href="/css/byu-breadcrumbs.sass" />
-    <link rel="stylesheet" href="/css/byu-footer-action-button.sass" />
-    <link rel="stylesheet" href="/css/byu-header.sass" />
-    <link rel="stylesheet" href="/css/byu-footer-column.sass" />
-    <link rel="stylesheet" href="/css/byu-footer.sass" />
-    <link rel="stylesheet" href="/css/byu-menu.sass" />
-    <link rel="stylesheet" href="/css/byu-theme-components.min.css" />
-    <link rel="stylesheet" href="/css/byu-user-info.sass" />
-    <link rel="stylesheet" href="/css/byu-menu.sass" />
+    <link rel="stylesheet" href="./public/css/0.css" />
+    <link rel="stylesheet" href="./public/css/1.css" />
+    <link rel="stylesheet" href="./public/css/2.css" />
+    <link rel="stylesheet" href="./public/css/3.css" />
+    <link rel="stylesheet" href="./public/css/4.css" />
+    <link rel="stylesheet" href="./public/css/5.css" />
+    <link rel="stylesheet" href="./public/css/cas.css" />
+    <link rel="stylesheet" href="./public/css/byu-breadcrumbs.sass" />
+    <link rel="stylesheet" href="./public/css/byu-footer-action-button.sass" />
+    <link rel="stylesheet" href="./public/css/byu-header.sass" />
+    <link rel="stylesheet" href="./public/css/byu-footer-column.sass" />
+    <link rel="stylesheet" href="./public/css/byu-footer.sass" />
+    <link rel="stylesheet" href="./public/css/byu-menu.sass" />
+    <link rel="stylesheet" href="./public/css/byu-theme-components.min.css" />
+    <link rel="stylesheet" href="./public/css/byu-user-info.sass" />
+    <link rel="stylesheet" href="./public/css/byu-menu.sass" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -85,26 +85,10 @@
   </head>
   <html>
     <body>
-      <script
-        type="text/javascript"
-        src="/cas/webjars/es5-shim/4.5.9/es5-shim.min.js"
-      ></script>
-      <script
-        type="text/javascript"
-        src="/cas/webjars/css-vars-ponyfill/2.4.7/dist/css-vars-ponyfill.min.js"
-      ></script>
-      <script
-        type="text/javascript"
-        src="/cas/webjars/jquery/3.7.1/jquery.min.js"
-      ></script>
-      <script
-        type="text/javascript"
-        src="/cas/webjars/material-components-web/14.0.0/dist/material-components-web.min.js"
-      ></script>
       <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">-->
       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
-      <script type="text/javascript" src="/cas/js/cas.js"></script>
+      <script type="text/javascript" src="./public/js/cas.js"></script>
       <script>
         if (typeof resourceLoadedSuccessfully === "function") {
           resourceLoadedSuccessfully()
@@ -205,7 +189,7 @@
             .attr("tabindex", "4")
             .html(
               "" +
-                '<span style="color: #444;"><img src="images/ChurchAccount_logo.png" alt="">Sign in with Church Account</span></a>'
+                '<span style="color: #444;"><img src="./public/images/ChurchAccount_logo.png" alt="">Sign in with Church Account</span></a>'
             )
           $("li[title='Church']").attr("id", "churchSignIn")
 
@@ -248,7 +232,7 @@
               )
             } else {
               $("#identificationForUser").html(
-                '<img id="ldsLoading" width="20px" src="images/spinner.gif" alt=""/>'
+                '<img id="ldsLoading" width="20px" src="./public/images/spinner.gif" alt=""/>'
               )
             }
           }
@@ -441,7 +425,7 @@
                 <div class="signin-wrapper">
                   <div class="byu-signin-box">
                     <div class="signin-box-byu-logo">
-                      <img src="./images/BYU-Logo.svg" />
+                      <img src="./public/images/BYU-Logo.svg" />
                     </div>
                     <p>
                       By signing in, you agree to BYU Account
@@ -536,7 +520,15 @@
                     <div>
                       <!--<div class="card-header text-center">--><!--<h2 th:text="#{cas.login.pagetitle}">Login</h2>--><!--<span class="fa-stack fa-2x hidden-xs">--><!--<i class="fa fa-circle fa-stack-2x"></i>--><!--<i class="fa fa-lock fa-stack-1x fa-inverse"></i>--><!--</span>--><!--</div>-->
                       <div>
-                        <form method="post" id="fm1" action="/loginform">
+                        <script>
+                          function submitFunction() {
+                            window.location.href =
+                              "https://cas.byu.edu/cas/login?service=https://housing.byu.edu/secure/services/c_main/login.aspx?r=/secure/services/c_main/default.aspx"
+                            // "https://cas.byu.edu/cas/login?service=https%3A%2F%2Fcas.byu.edu%2Fcas%2Fidp%2Fprofile%2FSAML2%2FCallback%3Fsrid%3DONELOGIN_ad61989d17a5d51c0705db2333f61795295fd30e%26entityId%3Dhttps%253A%252F%252Flearningsuite.byu.edu"
+                            return false
+                          }
+                        </script>
+                        <form id="fm1" onsubmit="return submitFunction()">
                           <!--<h3>Testing</h3>--><!--<h3 th:utext="#{screen.welcome.instructions}">Enter your Username and Password</h3>-->
                           <section>
                             <!--<label for="username" th:utext="#{screen.welcome.label.netid}">Username</label>-->
